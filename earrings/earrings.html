@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../index.css">
+    <title>Earrings</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+          <div class="menu-icon" id="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="sidebar" id="sidebar">
+            
+          <div class="close-icon" id="close-icon">
+            <i class="fa-regular fa-circle-xmark"></i>
+          </div>
+          <p class="big"> 
+            <li id="side1"><a href="../index.html">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Shop Jwellery</a>
+              <p>
+                <li><a href="/earrings/earrings.html">Earrings</a></li>
+                <li><a href="/rings/rings.html">Rings</a></li>
+                <li><a href="/bangles/bangles.html">Bangles</a></li>
+                <li><a href="/necklace/necklace.html">Necklace</a></li>
+                <li><a href="/solitaire/solitaire.html">Solitaire</a></li>
+                <li><a href="/allJewellery/alljewellery.html">All Jwellery</a></li>
+              <p>
+            </li>
+            <li><a href="#">Gifting</a></li>
+            <li><a href="#">Collections</a>
+              <p>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Best Sellers</a></li>
+              </p>
+
+            </li>
+          </p>
+        </div>
+        <div class="overlay" id="overlay" ></div>
+            <div class="logo">
+                <img src="c:\Users\hritika\OneDrive\Pictures\Screenshots\Screenshot 2024-12-13 192431.png" alt="LOGO">
+            </div>
+            <div class="menu" id="menu">
+                <ul>
+                 <a href="../index.html"> <i class="fa-solid fa-house"></i></a>
+                    <!-- <li><a href="#">HOME</a></li> -->
+                    <!-- <li><a href="#">ABOUT</a></li> -->
+                    <a href="../contact.html"><i class="fa-solid fa-user"></i></a>
+                    <!-- <li><a href="#">CONTACT US</a></li> -->
+
+                    
+                </ul> 
+                </div>      
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Main content here -->
+        <p>Earrings Collection</p>
+        <p>Explore our exquisite earrings that will elevate your style </p>
+        <div class="collection-items">
+            <div class="item">
+                <img src="./1.png" alt="">
+                <span>Lorem, ipsum dolor.</span>
+                <p>₹ 685093</p>
+            </div>
+            <div class="item">
+                <img src="./2.png" alt="">
+                <span>Lorem, ipsum dolor.</span>
+                <p>₹ 685093</p>
+            </div>
+            <div class="item">
+                <img src="./3.png" alt="">
+                <span>Lorem, ipsum dolor.</span>
+                <p>₹ 685093</p>
+            </div>
+            <div class="item">
+                <img src="./4.png" alt="">
+                <span>Lorem, ipsum dolor.</span>
+                <p>₹ 685093</p>
+            </div>
+            <div class="item">
+                <img src="./5.png" alt="">
+                <span>Lorem, ipsum dolor.</span>
+                <p>₹ 685093</p>
+            </div>
+            <div class="item">
+                <img src="./6.png" alt="">
+                <span>Lorem, ipsum dolor.</span>
+                <p>₹ 685093</p>
+            </div>
+            <div class="item">
+                <img src="./7.png" alt="">
+                <span>Lorem, ipsum dolor.</span>
+                <p>₹ 685093</p>
+            </div>
+            <div class="item">
+                <img src="./8.png" alt="">
+                <span>Lorem, ipsum dolor.</span>
+                <p>₹ 685093</p>
+            </div>
+        </div>
+      </main>
+    
+      <footer class="footer">
+        <div class="subfooter">
+          <div class="row">
+  
+            <div class="footer-col">
+            <ul>
+              <p>Quick Links</p>
+              
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Tarini</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">My Profile</a></li>
+            </ul>
+           </div>
+  
+           <div class="footer-col">
+            
+            <ul>
+              <p>Our Services</p>
+              <li><a href="#">Book Appoitment</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Pricing Guide</a></li>
+              <li><a href="#">Gifting Guide</a></li>
+            </ul>
+           </div>
+  
+  
+           <div class="footer-col">
+            <ul>
+              <p>Legal Information</p>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookies Policy</a></li>
+              <li><a href="#">Return Policy</a></li>
+            </ul>
+           </div>
+  
+          
+  
+         </div>
+       </div>
+       </div>
+      </footer>
+      
+  
+      <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+      <script>
+     
+  
+     // Using jQuery to manage the sidebar 
+     $(document).ready(function() {
+        // Toggle sidebar and overlay when the menu icon is clicked
+        $('#menu-icon').click(function() {
+          $('#sidebar').show(); 
+         
+        });
+  
+        // Close the sidebar and overlay when the close icon is clicked
+        $('#close-icon').click(function() {
+          $('#sidebar').hide();
+          
+          
+        });
+  
+        // Close the sidebar when clicking outside (on the overlay)
+        $('#overlay').click(function() {
+          $('#sidebar').removeClass('active');
+          $('#overlay').removeClass('active');
+          $('body').css('opacity', '1');  // Restore the opacity of the page
+        });
+      });
+      </script>
+</body>
+</html>
